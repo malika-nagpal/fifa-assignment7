@@ -202,27 +202,9 @@ def display_final_result(selected_year):
     return html.H4(f"In {selected_year}, {row['Winner']} won against {row['Runner-Up']}.")
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
-'''
+    app.run(debug=True)
 
-with open("app.py", "w") as f:
-    f.write(code)
 
-print(" app.py has been created.")
 
-requirements = '''
-dash
-pandas
-plotly
-gunicorn
-'''
 
-with open("requirements.txt", "w") as f:
-    f.write(requirements.strip())
 
-print("requirements.txt has been created.")
-
-with open("Procfile", "w") as f:
-    f.write("web: gunicorn app:app")
-
-print("Procfile has been created.")
