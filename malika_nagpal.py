@@ -56,7 +56,7 @@ df_finals = pd.read_csv("world_cup_finals.csv")
 df_wins= pd.read_csv("world_cup_wins.csv")
 
 
-app = dash.Dash(__name__)
+app = Dash()
 server=app.server
 app.title = "FIFA World Cup Dashboard"
 
