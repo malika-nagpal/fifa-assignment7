@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/17J8Xf8-EAKiPyXO77B9hz8FghxUCaRmB
 """
 
-!pip install pandas numpy plotly dash dash-bootstrap-components
-
 import pandas as pd
 import numpy as np
 
@@ -59,6 +57,7 @@ df_wins= pd.read_csv("world_cup_wins.csv")
 
 
 app = dash.Dash(__name__)
+server=app.server
 app.title = "FIFA World Cup Dashboard"
 
 
